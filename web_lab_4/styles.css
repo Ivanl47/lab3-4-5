@@ -1,0 +1,181 @@
+/* Стилі для body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Стилі для заголовка h1 */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Стилі для контейнера .header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Стилі для кнопок сортування та пошуку */
+#sort-by-price,
+#sort-by-brand,
+#search-input,
+#search-button,
+#cancel-search-button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#sort-by-price,
+#sort-by-brand {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+#search-input {
+    flex: 1;
+}
+
+#search-button {
+    background-color: #28A745;
+    color: #fff;
+}
+
+#cancel-search-button {
+    background-color: #DC3545;
+    color: #fff;
+}
+
+/* Стилі для контейнера #bicucle-list */
+#bicucle-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Стилі для елементів алкоголю .bicucle-item */
+.bicucle-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bicucle-item img {
+    width: 90px;
+    height: 250px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.bicucle-item p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Стилі для загальної ціни */
+#total-price {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#total-amount {
+    color: #28A745;
+    font-size: 24px;
+}
+
+/* Стилі для кнопок "Редагувати" і "Додати товар" */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button:hover {
+    background-color: #1e6cab;
+}
+
+/* Стилі для модальних вікон */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Стилі для вмісту модальних вікон */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Стилі для кнопок закриття модальних вікон */
+.close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: #888;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* Стилі для кнопок "Додати товар" та "Редагувати" */
+#open-create-modal-button,
+.edit-button,
+#save-edit-button {
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#open-create-modal-button:hover,
+.edit-button:hover,
+#save-edit-button:hover {
+    background-color: #1e6cab;
+}

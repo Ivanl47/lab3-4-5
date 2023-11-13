@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <title>lab-4</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <h1 class="first">Фірмовий магазин алкоголю</h1>
+
+    <div class="header">
+        <button id="sort-by-price">Сортувати за ціною</button>
+        <button id="sort-by-brand">Сортувати за брендом</button>
+        <button id="open-create-modal-button">Додати товар</button>
+
+        <input type="text" id="search-input" placeholder="Пошук за брендом або моделлю">
+        <button id="search-button">Пошук</button>
+        <button id="cancel-search-button">Скасувати пошук</button>
+    </div>
+
+    <div id="create-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-create-modal" class="close">&times;</span>
+            <h2>Додати продукт</h2>
+            <form id="create-modal-form">
+                <label for="create-brand">Бренд:</label>
+                <input type="text" name="brand" id="create-brand" required>
+                <br>
+                <label for="create-name">Назва:</label>
+                <input type="text" name="name" id="create-name" required>
+                <br>
+                <label for="create-price">Ціна:</label>
+                <input type="number" name="price" id="create-price" required min="0">
+                <br>
+                <label for="create-country">Країна:</label>
+                <input type="text" name="country" id="create-country" required>
+                <br>
+                <label for="create-image">URL зображення:</label>
+                <input type="url" name="image" id="create-image" required>
+                <br>
+                <button type="submit" id="create-button">Зберегти</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-edit-modal" class="close">&times;</span>
+            <h2>Редагувати товар</h2>
+            <form id="edit-modal-form">
+                <label for="edit-brand">Бренд:</label>
+                <input type="text" name="edit-brand" id="edit-brand" required>
+                <br>
+                <label for= "edit-name">Назва:</label>
+                <input type="text" name="edit-name" id="edit-name" required>
+                <br>
+                <label for="edit-price">Ціна:</label>
+                <input type="number" name="edit-price" id="edit-price" required min="0" step="0.1">
+                <br>
+                <label for="edit-country">Країна:</label>
+                <input type="text" name="edit-country" id="edit-country">
+                <br>
+                <label for="edit-image">URL зображення:</label>
+                <input type="text" name="edit-image" id="edit-image" >
+                <br>
+                <button id="save-edit-button">Зберегти зміни</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="bicycle-list"></div>
+
+    <p id="total-price">Загальна ціна: ₴<span id="total-amount">0</span></p>
+
+    <script src="./index.js">
+    </script>
+</body>
+</html>
